@@ -1,0 +1,9 @@
+application {
+    name = "mysql"
+    type = "docker-external"
+}
+
+customization "docker" {
+    image = "centurylink/mysql"
+    run_args = "-p 3306:3306 -e MYSQL_ROOT_PASSWORD="
+}
